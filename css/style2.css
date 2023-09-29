@@ -1,0 +1,219 @@
+* {
+    
+    font-family: "Roboto+Slab" ;
+}
+
+/*header*/
+
+.navbar_superior {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    list-style: none;
+    box-shadow: 0 0.2em 0.1em rgba(0, 0,0, 0.2);
+}
+
+/*logos*/
+
+.navbar_superior picture {
+    background-color: blueviolet;
+}
+
+/* area de relleno central, util en responsive*/
+
+
+
+/*lista de links a la derecha*/
+
+.navbar_superior ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+}
+
+
+.navbar_item {
+    
+    margin: 0;
+}
+
+.navbar_item a {
+    text-decoration: none;
+    color: #373737;
+    font-family: "A";
+
+}
+
+.logo_navbar {
+    flex-shrink: 0;
+}
+
+.relleno_navbar {
+    margin-right: auto;
+}
+
+.iconos_sociales {
+    display: block;    
+    width: 6em;
+    
+}
+.links_navbar {
+    margin: 0;
+    flex: 0 0 4em;
+    background-color: white;
+
+}
+
+
+.links_navbar a, .aula_navbar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 4em;
+    width: 6em;
+}
+.links_navbar:hover {
+    background-color: #dce0e3;
+}
+
+
+
+.links_navbar a:hover {
+    color: #4ca9ee;
+}
+.aula_navbar a{
+    text-align: center;
+    color:#373737;
+    background-color: #5dcd81;
+    text-decoration: none;
+    
+    
+}
+
+
+.aula_navbar a:hover {
+    
+    background-color: #373737;
+    color:#dce0e3;
+}
+
+
+.links_navbar ul {
+    display: none;
+    position: absolute;
+    
+    list-style: none;
+    background-color: #dce0e3;
+    width:fit-content;
+    padding-left: 1em;
+    padding-top: 1em;
+    z-index: 1;
+    
+}
+
+.links_navbar div {
+    display: block;
+}
+
+.links_navbar:hover ul{
+    display: block;
+}
+
+.links_navbar ul li {
+    padding-left: 0.2em;
+}
+
+.icono_menu_responsive {
+    display: none;
+    background-color: inherit;
+    width: 4em;
+}
+
+.icono_menu_responsive div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+/*contenido*/
+
+.central {
+    background-color: aqua;
+}
+
+.acceso_rapido{
+    background-color: blue;
+}
+
+.calesita_noticias{
+
+    background-color: cadetblue;
+}
+
+.inscripciones {
+    background-color: aqua;
+}
+
+/*footer*/
+
+footer {
+    display: flex;
+    background-color: #373737;
+    height: 12em;
+    color: #dce0e3;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+
+/* responsive */
+
+@media (max-width: 992px) {
+
+    /*barra navegacion*/
+
+    .logo_navbar_institucional{order: 1;}
+    .logo_navbar_nombre{order: 2;}
+    .relleno_navbar{order: 3;}
+    .navbar_superior ul {
+        
+        display: none;
+    }
+    .icono_menu_responsive{
+        display: block;
+        order: 5;
+    }
+    .aula_navbar{
+        order: 4;
+        margin-right: 4em;
+    }
+
+    /*footer*/
+
+    footer {
+        
+
+    }
+
+    /*contenido*/
+
+}
+
+@media (max-width: 600px){
+
+    /*barra navegacion*/
+
+    /*footer*/
+
+    footer {
+        flex-direction: column;
+
+    }
+
+    /*contenido*/
+}
