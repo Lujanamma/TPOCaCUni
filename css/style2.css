@@ -1,90 +1,163 @@
 * {
-    
+    box-sizing: border-box;
     font-family: "Roboto+Slab" ;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+        
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
 }
 
 /*header*/
 
-.navbar_superior {
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    
     background-color: white;
+    box-shadow: 0 0.2em 0.1em rgba(0, 0,0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    z-index: 300;
+    
+}
+
+
+
+
+.navbar_izquierda {
+    
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*logos*/
+
+.navbar_logo {
+    
+    color: #373737;
+
+}
+
+.logo_navbar_institucional {
+   
+}
+
+.logo_navbar_institucional img {
+    margin: 0;
+    object-fit: scale-down;
+    width: 7.8em ;
+    height: 7.8em;
+    
+}
+
+.logo_navbar_nombre {
+    margin: 0;
+    
+    width: 15em;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+h1 {
+    color: #228978;
+}
+
+h1 span {
+    font-size:smaller;
+}
+/*nnavbar derecha*/
+
+.navbar_derecha {
+    
+    
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    list-style: none;
-    box-shadow: 0 0.2em 0.1em rgba(0, 0,0, 0.2);
+    
+    z-index: 300;
+    
 }
-
-/*logos*/
-
-.navbar_superior picture {
-    background-color: blueviolet;
-}
-
-/* area de relleno central, util en responsive*/
-
 
 
 /*lista de links a la derecha*/
 
-.navbar_superior ul {
-    display: inline-flex;
+.navbar_derecha ul {
+    
     list-style: none;
-    margin: 0;
-}
-
-
-.navbar_item {
-    
-    margin: 0;
-}
-
-.navbar_item a {
-    text-decoration: none;
-    color: #373737;
-    font-family: "A";
-
-}
-
-.logo_navbar {
-    flex-shrink: 0;
-}
-
-.relleno_navbar {
-    margin-right: auto;
-}
-
-.iconos_sociales {
-    display: block;    
-    width: 6em;
     
 }
-.links_navbar {
-    margin: 0;
-    flex: 0 0 4em;
+
+.navbar_derecha ul li {
+    float: left;
+    position: relative;     
     background-color: white;
-
+    
 }
 
-
-.links_navbar a, .aula_navbar a{
+.navbar_lista_links li a, .aula_navbar a {
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    height: 4em;
-    width: 6em;
+    margin:0;
+    color: #373737;
+    padding: 1.5em;
+    width: 8em;
+    height: 8em;
 }
-.links_navbar:hover {
+
+.aula_navbar_responsive {
+    display: none;
+}
+
+.navbar_lista_links li a:hover {
+    color: #4ca9ee;
     background-color: #dce0e3;
 }
 
-
-
-.links_navbar a:hover {
-    color: #4ca9ee;
+.navbar_derecha ul li ul {
+    position: absolute;
+    left: 0;
+    width: inherit;
+    display: none;
+    
 }
+
+.navbar_derecha ul li ul li{
+    width: 100%;
+}
+
+.navbar_derecha ul li:focus-within > ul,
+.navbar_derecha ul li:hover > ul{
+    display: initial;
+}
+
+
+.iconos_sociales {
+    display: block;    
+    width: 3.5em;
+    height: 8em;
+    background-color: green;
+    
+}
+
+
+
 .aula_navbar a{
     text-align: center;
     color:#373737;
@@ -102,43 +175,23 @@
 }
 
 
-.links_navbar ul {
+
+.icon {
     display: none;
-    position: absolute;
-    
-    list-style: none;
-    background-color: #dce0e3;
-    width:fit-content;
-    padding-left: 1em;
-    padding-top: 1em;
-    z-index: 1;
-    
 }
 
-.links_navbar div {
-    display: block;
-}
 
-.links_navbar:hover ul{
-    display: block;
-}
-
-.links_navbar ul li {
-    padding-left: 0.2em;
-}
-
-.icono_menu_responsive {
+.navbar_derecha .icono_menu_responsive {
     display: none;
-    background-color: inherit;
-    width: 4em;
+    margin: 0;
+    width: 5em;
+    align-items: center;
 }
 
-.icono_menu_responsive div {
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-}
+
+
+
+
 
 /*contenido*/
 
@@ -163,6 +216,8 @@
 
 footer {
     display: flex;
+    margin: 0;
+    width: 100%;
     background-color: #373737;
     height: 12em;
     color: #dce0e3;
@@ -171,27 +226,127 @@ footer {
     align-items: center;
 }
 
+.logo_footer_institucional img {
+    margin: 0;
+    object-fit: scale-down;
+    width: 7em ;
+    height: 7em;
+    
+}
+
 /* responsive */
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
     /*barra navegacion*/
-
-    .logo_navbar_institucional{order: 1;}
-    .logo_navbar_nombre{order: 2;}
-    .relleno_navbar{order: 3;}
-    .navbar_superior ul {
+    .menu_responsive{
         
-        display: none;
-    }
-    .icono_menu_responsive{
         display: block;
-        order: 5;
+        cursor:pointer;
+        align-items:center;
+        
     }
-    .aula_navbar{
-        order: 4;
-        margin-right: 4em;
+    
+    header .navbar_lista_links {
+        position: absolute;
+        
+        top: 100%;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0.2em 0.1em rgba(0, 0,0, 0.2);
+        display: none;
+        
     }
+
+    .navbar_derecha {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .aula_navbar {
+        display: flex;
+        order: 1;
+        
+        
+    }
+    .aula_navbar a {
+        max-width: 8em;
+    }
+
+    .iconos_sociales {
+        order: 2;
+    }
+
+    .menu_responsive {
+        order: 3;
+    }
+    
+    .navbar_lista_links ul li {
+        width: 100%;
+        
+    }
+
+    .navbar_lista_links li a {
+        display: block;
+        flex: 1;
+            
+        text-align: center;
+        
+        color: #373737;
+        padding: 0.5em;
+        width: 100%;
+        height: auto;
+
+    
+    }
+
+    .navbar_derecha ul li ul {
+        position: relative;
+        width: 100%;
+        
+    }
+
+    .navbar_derecha ul li ul li {
+        background-color: aqua;
+    }
+
+    .icon {
+        display: block;
+        margin: 1em;
+        
+        order: 3;
+    }
+     /*footer*/
+
+    footer {
+        
+
+    }
+
+    /*contenido*/
+
+@media (max-width: 991px) {
+        .navbar_lista_links.responsive {display: initial;}
+        
+    }
+        
+    }
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+
+    
 
     /*footer*/
 
@@ -202,7 +357,7 @@ footer {
 
     /*contenido*/
 
-}
+
 
 @media (max-width: 600px){
 

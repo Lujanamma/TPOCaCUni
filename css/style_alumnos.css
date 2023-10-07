@@ -1,0 +1,173 @@
+
+
+
+#contenedor_alumnos {
+    padding: 1em;
+    display: block;
+    margin: 0;
+
+    background-color: white;
+    width: 100%;
+    
+}
+
+#contenedor_alumnos section {
+    max-width: 992px;
+}
+
+/*inscripciones */
+
+#informacion_inscripciones {
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    align-items: center;
+    background-color: aquamarine;
+      
+}
+
+
+
+/* seccion de pasos de inscripcion */
+
+#pasos_inscipcion {
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    align-items: center;
+    width: 100%;
+    background-color: blue;
+}
+
+.paso_x_paso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    position: relative;
+}
+
+.paso_x_paso div {
+
+}
+
+.paso_x_paso label {
+    display: block;
+    cursor: pointer;
+}
+
+.acordeon_mayor > input[type="checkbox"] {
+    
+    position: absolute;
+}
+
+
+
+
+.acordeon_mayor .contenido_acordeon_mayor {
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+    justify-content: space-between;
+    overflow-y: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+}
+
+.acordeon_mayor > input[type="checkbox"]:checked ~ .contenido_acordeon_mayor {
+    height: auto;
+    overflow: visible;
+}
+
+.acordeon_mayor label {
+    display: block;
+}
+
+.acordeon {
+    padding: 0.5em;
+}
+
+
+
+
+.acordeon > input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+}
+
+.acordeon .contenido_acordeon {
+    margin: 1em;
+
+    overflow-y: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+}
+
+.acordeon > input[type="checkbox"]:checked ~ .contenido_acordeon {
+    height: auto;
+    overflow: visible;
+}
+
+.acordeon label {
+    display: block;
+}
+
+.paso_x_paso input[type="checkbox"] {
+    display: none;
+}
+
+
+.acordeon .disparador label::after {
+    font-family: 'fontawesome';
+    content: "\f054";
+    display: inline-block;
+    margin-left: 1em;
+    font-size: .58em;
+    line-height: 1.556em;
+    vertical-align: middle;
+}
+
+.acordeon > input[type="checkbox"]:checked ~ .disparador label::after {
+    content: "\f078";
+}
+
+
+ 
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+/*tramites*/
+
+#seccion_tramites {
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    align-items: center;
+    background-color: aquamarine;
+}
+
+
