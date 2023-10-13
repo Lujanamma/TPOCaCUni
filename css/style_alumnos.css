@@ -1,13 +1,22 @@
 
+
+
+
+#main {
+    margin-top: 8em;
+}
+
+/* tiutlos generales, usar siempre para mantener el formato en todas las páginas */
+
 #contenedor_titulos {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    
+        
 
     
     align-items: center;
-    background-color: aqua;
+    
     padding: 0;
     
     margin: 0;
@@ -51,7 +60,7 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
-
+    
 }
 
 
@@ -64,6 +73,7 @@
     background-color: #5dcd81;
     color:#373737;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
     
 }
 
@@ -76,15 +86,8 @@
     background-color: #228978;
     color: white;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
-
-
-
-
-
-
-
-
 
 #contenedor_alumnos {
     padding: 1em;
@@ -103,33 +106,43 @@
 }
 
 
-
 /*inscripciones */
 
 #informacion_inscripciones {
     display: block;
-    
     margin-left: auto;
     margin-right: auto;
-    
     align-items: center;
-    background-color: aquamarine;
-      
+ 
 }
 
-
+.parrafo_general {
+    background-color: white;
+    margin: 1em;
+    padding: 2em;
+}
 
 /* seccion de pasos de inscripcion */
 
 #pasos_inscipcion {
     display: block;
-    
+    margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
     
     align-items: center;
     width: 100%;
     background-color: blue;
+}
+
+#pasos_inscipcion h5 {
+    display: block;
+    background-color: #4ca9ee;
+    color: #373737;
+    padding: 3em;
+  
+    text-align: center;
+    
 }
 
 .paso_x_paso {
@@ -142,13 +155,18 @@
     position: relative;
 }
 
-.paso_x_paso div {
-
-}
 
 .paso_x_paso label {
     display: block;
     cursor: pointer;
+    padding: 1em;
+    margin: 0;
+    background-color: #9ad1f8;
+    color: #373737;
+}
+
+.disparador_mayor label {
+    padding: 2em;
 }
 
 .acordeon_mayor > input[type="checkbox"] {
@@ -156,13 +174,11 @@
     position: absolute;
 }
 
-
-
-
 .acordeon_mayor .contenido_acordeon_mayor {
+
     display: flex;
     flex-direction: row;
-    align-items:start;
+    align-items:flex-start;
     justify-content: space-between;
     overflow-y: hidden;
     height: 0;
@@ -179,11 +195,14 @@
 }
 
 .acordeon {
-    padding: 0.5em;
+    width: 33.33%;
+    border: 0.1em solid #228978;
 }
 
-
-
+.acordeon label {
+    background-color: #9ad1f8;
+    width: 100%;
+}
 
 .acordeon > input[type="checkbox"] {
     position: absolute;
@@ -191,7 +210,7 @@
 }
 
 .acordeon .contenido_acordeon {
-    margin: 1em;
+    background-color: white;    
 
     overflow-y: hidden;
     height: 0;
@@ -212,17 +231,19 @@
 }
 
 
-.acordeon .disparador label::after {
+.acordeon_mayor .disparador_mayor label::after, .acordeon .disparador label::after {
     font-family: 'fontawesome';
     content: "\f054";
-    display: inline-block;
-    margin-left: 1em;
+    
+    float: right;
+    margin-left: auto;
     font-size: .58em;
     line-height: 1.556em;
     vertical-align: middle;
 }
 
-.acordeon > input[type="checkbox"]:checked ~ .disparador label::after {
+.acordeon_mayor > input[type="checkbox"]:checked ~.disparador_mayor label::after,
+ .acordeon > input[type="checkbox"]:checked ~ .disparador label::after {
     content: "\f078";
 }
 
