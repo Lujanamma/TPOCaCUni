@@ -91,11 +91,13 @@
 
 #contenedor_alumnos {
     padding: 1em;
-    display: block;
+    display: flex;
+    flex-direction: column;
+
     margin: 0;
     padding: 0;
 
-    background-color: white;
+    
     width: 100%;
     
 }
@@ -103,21 +105,26 @@
 
 #contenedor_alumnos section {
     max-width: 1340px;
+    flex: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
+    
 }
 
 
 /*inscripciones */
 
 #informacion_inscripciones {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+    
  
 }
 
 .parrafo_general {
-    background-color: white;
+    
+    
     margin: 1em;
     padding: 2em;
 }
@@ -132,7 +139,7 @@
     
     align-items: center;
     width: 100%;
-    background-color: blue;
+    
 }
 
 #pasos_inscipcion h5 {
@@ -165,29 +172,47 @@
     color: #373737;
 }
 
+.acordeon_mayor {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+.acordeon_mayor > input[type="checkbox"] {
+    width: 100%;
+    position: absolute;
+}
+
 .disparador_mayor label {
     padding: 2em;
 }
 
-.acordeon_mayor > input[type="checkbox"] {
-    
-    position: absolute;
-}
-
 .acordeon_mayor .contenido_acordeon_mayor {
-
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items:flex-start;
     justify-content: space-between;
     overflow-y: hidden;
-    height: 0;
-    transition: height 0.3s ease;
+    max-height: 0;
+    transition: max-height 0.5s ease;
+    -webkit-transition: max-height 0.5s ease;
+    -moz-transition: max-height 0.5s ease;
+    -ms-transition: max-height 0.5s ease;
+    -o-transition: max-height 0.5s ease;
 }
 
 .acordeon_mayor > input[type="checkbox"]:checked ~ .contenido_acordeon_mayor {
-    height: auto;
+    max-height: 80em;
     overflow: visible;
+    transition: max-height 1s ease;
+    -webkit-transition: max-height 1s ease;
+    -moz-transition: max-height 1s ease;
+    -ms-transition: max-height 1s ease;
+    -o-transition: max-height 1s ease;
+    
 }
 
 .acordeon_mayor label {
@@ -195,7 +220,9 @@
 }
 
 .acordeon {
-    width: 33.33%;
+    flex: 1;
+    display: flex;
+    
     border: 0.1em solid #228978;
 }
 
@@ -205,21 +232,32 @@
 }
 
 .acordeon > input[type="checkbox"] {
-    position: absolute;
-    left: -100vw;
+    display: none;
 }
 
 .acordeon .contenido_acordeon {
-    background-color: white;    
-
+    background-color: white;
     overflow-y: hidden;
-    height: 0;
-    transition: height 0.3s ease;
+    max-height: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: color 0.5 ease 1s;
+    -moz-transition: color 0.5 ease 1s;
+    -ms-transition: color 0.5 ease 1s;
+    -o-transition: color 0.5 ease 1s;
+    color: transparent;
+    transition: color 0.5 ease 1s;
 }
 
 .acordeon > input[type="checkbox"]:checked ~ .contenido_acordeon {
-    height: auto;
+    max-height: 10em;
     overflow: visible;
+    transition: all 0.3s ease;
+    -webkit-transition: color 0.5 ease 1s;
+    -moz-transition: color 0.5 ease 1s;
+    -ms-transition: color 0.5 ease 1s;
+    -o-transition: color 0.5 ease 1s;
+    color: #373737;
+    transition: color 0.5 ease 1s;
 }
 
 .acordeon label {
@@ -231,7 +269,9 @@
 }
 
 
-.acordeon_mayor .disparador_mayor label::after, .acordeon .disparador label::after {
+.acordeon_mayor .disparador_mayor label::after, 
+.acordeon .disparador label::after,
+.acordeon_oferta_academica label::after {
     font-family: 'fontawesome';
     content: "\f054";
     
@@ -243,9 +283,157 @@
 }
 
 .acordeon_mayor > input[type="checkbox"]:checked ~.disparador_mayor label::after,
- .acordeon > input[type="checkbox"]:checked ~ .disparador label::after {
+ .acordeon > input[type="checkbox"]:checked ~ .disparador label::after, 
+ .acordeon_oferta_academica > input[type="checkbox"]:checked ~ label::after {
     content: "\f078";
 }
+
+#oferta_academica {
+    margin-top: 2em;
+    width: 100%;
+}
+
+.acordeon_oferta_academica {
+    background-color: #228978;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.acordeon_oferta_academica label {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    padding: 1em;
+    margin: 0;
+}
+
+.acordeon_oferta_academica > input[type="checkbox"] {
+    display: none;
+
+}
+
+.acordeon_oferta_academica .contenido_ofac {
+    background-color: #5dcd81;
+    overflow-y: hidden;
+    height: 0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    
+}
+
+.acordeon_oferta_academica > input[type="checkbox"]:checked ~ .contenido_ofac {
+    height: 10em;
+    overflow: visible;
+    
+}
+
+
+/*tramites*/
+
+#seccion_tramites {
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    align-items: center;
+    background-color: aquamarine;
+}
+
+
+/* RESPNSIVE */
+
+@media (max-width: 991px) {
+
+    /* responsive de la bufanda */
+
+    #contenedor_titulos div {
+        margin: 0em;
+    
+        padding: 0;
+        overflow: hidden;
+        flex-shrink: 0;
+        height:100%;
+    }
+    
+    
+    
+    #contenedor_titulos .titulos {
+        
+        max-width: 991px;
+        justify-content: center;
+        overflow-x: hidden;
+        
+    }
+
+    
+    
+    
+    
+    .titulo_letras {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 524px;
+        
+    }
+    
+    
+    .titulo_letras h3 {
+        
+        
+    }
+    
+    .titulo_letras h5 {
+        
+    }
+
+    /* contenedor de alumnos*/
+
+    /*pasos para inscripcion*/
+
+    .acordeon_mayor .contenido_acordeon_mayor {
+        
+        flex-direction: column;
+        
+    }
+
+    /* oferta academica */
+
+
+}
+
+@media (max-width: 600px){
+
+    /* responsive de la bufanda */
+
+    .bufanda_der, .bufanda_izq {
+        display: none;
+    }
+
+    
+
+
+
+    /* contenedor de alumnos*/
+
+
+    /*pasos para inscripcion*/
+
+
+
+
+    /* oferta academica */
+
+
+
+
+
+}
+
 
 
  
@@ -268,16 +456,5 @@
 
 
 
-/*tramites*/
-
-#seccion_tramites {
-    display: block;
-    
-    margin-left: auto;
-    margin-right: auto;
-    
-    align-items: center;
-    background-color: aquamarine;
-}
 
 
