@@ -8,6 +8,15 @@ function FuncionResponsiveNavbar() {
     }
 }
 
+function FuncionMuestraNoticias() {
+  var x = document.getElementById("deslizador_id");
+  if (x.className === "deslizador") {
+    x.className += " mas_noticias";
+  } else {
+    x.className = "deslizador";
+  }
+}
+
 function NavbarCelularAbre() {
   document.getElementById("minavbar").style.width = "100%";
 }

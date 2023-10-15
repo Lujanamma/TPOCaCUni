@@ -4,6 +4,7 @@
 
 #main {
     margin-top: 8em;
+    height: 100%;
 }
 
 /* tiutlos generales, usar siempre para mantener el formato en todas las páginas */
@@ -97,7 +98,7 @@
     margin: 0;
     padding: 0;
 
-    
+    height: 100%;
     width: 100%;
     
 }
@@ -327,6 +328,11 @@
 .acordeon_oferta_academica > input[type="checkbox"]:checked ~ .contenido_ofac {
     height: 10em;
     overflow: visible;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     
 }
 
@@ -343,8 +349,157 @@
     background-color: aquamarine;
 }
 
+/* Calendario Academico */
+#contenedor_alumnos_calendario {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 1em;
+    padding: 0;
 
-/* RESPNSIVE */
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+#contenedor_alumnos_calendario section {
+    max-width: 1340px;
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
+    
+}
+
+
+
+
+#calendario {
+    padding: 0;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+    width: 100%;
+    height: 34em;
+    justify-content: center;
+    
+        
+}
+
+
+
+.calendario_proper {
+    margin: 1em;
+    display: block;
+    align-items: center;
+    margin: 0;
+    flex: 62.5%;
+    height: 32em;
+    
+}
+
+.calendario_embed {
+    padding: 0;
+    margin: 0;
+    display: block;
+    height: 32em;
+    width: 100%;
+}
+
+
+
+/* deslizador de noticias */
+
+#eventos {
+    margin: 1em;
+    display: block;
+    flex: 37.5%;
+    height: 32em;
+    
+    
+
+}
+
+#marco_deslizador_id {
+    position: relative;
+    
+    display: block;
+    overflow: hidden;
+    
+    height: 32em;
+}
+
+.deslizador {
+    position: absolute;
+    bottom: -28em;
+    /*min*//*bottom: 4em;
+    /*max*/display: block;
+    width: 100%;
+    height: 60em;
+    overflow-y: visible;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+}
+
+.deslizador.mas_noticias {
+    bottom: 4em;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+}
+
+#disparador_noticias {
+    
+}
+
+.deslizador a {
+    text-align: center;
+    height: 2em;
+    width: 100%;
+    background-color: brown;
+    display: block;
+    overflow: visible;
+}
+
+.boton_arriba {
+    
+}
+
+.boton_abajo {
+   
+    
+}
+
+
+.eventos article{
+    overflow: visible;
+    height: 10em;
+    padding: 0.5em;
+    border: 0.1em solid #9ad1f8;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* RESPoNSIVE */
 
 @media (max-width: 991px) {
 
