@@ -17,6 +17,26 @@ function FuncionMuestraNoticias() {
   }
 }
 
+function CambioTramite(evt, TramiteActivo ){
+  var i, contenido_pestania, pestania_link;
+
+  contenido_pestania = document.getElementsByClassName("contenido_pestania");
+  for (i = 0; i < contenido_pestania.length; i++) {
+    contenido_pestania[i].style.display = "none";
+  } 
+
+  pestania_link = document.getElementsByClassName("pestania_link");
+  for (i = 0; i < pestania_link.length; i++) {
+    pestania_link[i].className = pestania_link[i].className.replace("active", "");
+  }
+
+  document.getElementById(TramiteActivo).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+
+
 function NavbarCelularAbre() {
   document.getElementById("minavbar").style.width = "100%";
 }
