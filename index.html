@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Universidad Florence Nightingale</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style2.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
     </style>
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -19,13 +19,13 @@
         
             <div class="navbar_izquierda">
                 <picture class=" navbar_logo logo_navbar_institucional">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="images/logo_universidad.png" alt="logo_institucional">
 
                     </a>
                 </picture>
                 <div class="navbar_logo logo_navbar_nombre">
-                    <a href="#">
+                    <a href="index.html">
                         
                         <h1 >Universidad <br><span>Florence Nightingale</span> </h1>
                     </a>
@@ -36,7 +36,7 @@
 
 
                 <div class="iconos_sociales">
-                            <a href="#">
+                            <a href="index.html">
                                 <i class="fa fa-home" aria-hidden="true"></i>
                             </a> 
                             <a href="#">
@@ -48,7 +48,7 @@
                             <a href="#">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                             </a>
-                            <a href="#">
+                            <a href="contacto.html">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                             </a> 
                 </div>
@@ -60,9 +60,9 @@
                         <li class="navbar_item links_navbar">
                             <a href="#">ALUMNOS<h2 hidden>alumnos Universidad Florence Nightingale</h2></a>
                             <ul >
-                                <li><a href="#">Inscripciones</a></li>
-                                <li><a href="#">Trámites</a></li>
-                                <li><a href="#">Calendario Académico</a></li>
+                                <li><a href="alumnos\inscripciones.html">Inscripciones</a></li>
+                                <li><a href="alumnos\tramites.html">Trámites</a></li>
+                                <li><a href="alumnos\calendario.html">Calendario Académico</a></li>
                                 <li><a href="#">Biblioteca</a></li>
                             </ul>
                         </li>
@@ -105,36 +105,61 @@
         
     </header>
 
-    
+    <main>
+        <div id="contenedor_index">
+            <section class="banner">
+                
+                <div class="cuadrados-container">
+                    <div class="subcontainer-cuadrados">
+                        <div class="cuadrado"><a href="/inscripciones">Inscripciones</a></div>
+                    </div>
+                    <div class="subcontainer-cuadrados">
+                        <div class="cuadrado"><a href="/carreras">Carreras</a></div>
+                    </div>
+                    
+                    <div class="subcontainer-cuadrados">
+                        <div class="cuadrado"><a href="/alumnos">Alumnos</a></div>
+                    </div>
+                    
+                    <div class="subcontainer-cuadrados">
+                        <div class="cuadrado"><a href="/sedes">Sedes</a></div>
+                    </div>
+                    
+                    <div class="subcontainer-cuadrados">
+                        <div class="cuadrado"><a href="/sedes">Sedes</a></div>
+                    </div>
+                    
+                    <div class="subcontainer-cuadrados">
+                        <div class="cuadrado"><a href="/sedes">Sedes</a></div>
+                    </div>
+                    
 
-   
+                </div>
+            </section>
+            <section id="contenedor_noticias">
+                <div>
+                    <p>Noticias</p>
+                </div>
 
-    <!--contenido-->
-    <div class="central" style="height: 20em;">
-        <p>espacio central</p>
+                <div id="marco_deslizador_id" class="marco_deslizador">
+                        
+                    <div id="deslizador_id" class="deslizador">
+                        <a href="javascript:void(0);" class="masnoticias" onclick="FuncionMuestraNoticias()">
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                        <article>noticia1</article>
+                        <article>noticia2</article>
+                        <a href="javascript:void(0);" class="masnoticias" onclick="FuncionMuestraNoticias()">
+                            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    
 
-    </div>
-
-    <div class="acceso_rapido">
-        <p>acceso rapido</p>
-    </div>
-
-    <div class="calesita_noticias">
-        <p>calesita noticias</p>
-    </div>
-
-    <div class="imagen_de_publicidad">
-        <p>imagen de publicidad</p>
-    </div>
-    
+                </div>
+            </section>
+        </div>
         
-
-
-    
-
-
-
-<!--fin del contenido-->
+    </main>
 
     <footer>
         <picture class="logo_footer_institucional">

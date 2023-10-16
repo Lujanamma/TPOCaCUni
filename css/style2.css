@@ -35,11 +35,7 @@ header {}
     
 }
 
-
-
-
 .navbar_izquierda {
-    
     
     margin: 0;
     padding: 0;
@@ -159,26 +155,30 @@ h1 span {
 .navbar_derecha ul li ul li{
     width: 100%;
     
-    
-    
 }
 
 
 .navbar_derecha ul li:focus-within > ul,
 .navbar_derecha ul li:hover > ul{
     display: initial;
+}
+
+.iconos_sociales {
+    display: flex;
+    flex-direction: column;    
+    width: 3.5em;
+    height: 8em;
+    
     
 }
 
+.iconos_sociales a {
+    margin-top: 0.2em;
+    flex: 1;
+    text-align: center;
+    color: #373737;
+    text-decoration: none;
 
-
-
-.iconos_sociales {
-    display: block;    
-    width: 3.5em;
-    height: 8em;
-    background-color: green;
-    
 }
 
 
@@ -189,9 +189,7 @@ h1 span {
     background-color: #5dcd81;
     text-decoration: none;
     
-    
 }
-
 
 .aula_navbar a:hover {
     background-color: #373737;
@@ -203,12 +201,9 @@ h1 span {
     -o-transition: all 1s;
 }
 
-
-
 .icon {
     display: none;
 }
-
 
 .navbar_derecha .icono_menu_responsive {
     display: none;
@@ -216,14 +211,6 @@ h1 span {
     width: 5em;
     align-items: center;
 }
-
-
-
-
-
-
-
-
 
 
 /*contenido*/
@@ -251,7 +238,9 @@ h1 span {
 /*footer*/
 
 footer {
-    
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     margin: 0;
     width: 100%;
@@ -382,7 +371,13 @@ footer {
     }
 
     /*barra navegacion*/
+    .logo_navbar_nombre {
+        width: 80%;
+    }
     
+    h1 {
+        
+    }
 
     .navbar_derecha {
         display: flex;
@@ -506,7 +501,7 @@ footer {
     /*contenido*/
 }
 
-@media (max-width: 991px) {
+@media (max-width: 600px) {
     .navbar_lista_links.responsive {
         
         right: 0%;

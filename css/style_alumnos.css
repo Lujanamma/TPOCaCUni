@@ -542,10 +542,12 @@
 
 
 .eventos article{
+    
     overflow: visible;
     flex: 1;
     padding: 0.5em;
     border: 0.1em solid #9ad1f8;
+    
 }
 
 
