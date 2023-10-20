@@ -9,6 +9,7 @@
 main {
     margin-top: 8em;
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #contenedor_index, #contenedor_index_contenido {
@@ -86,6 +87,7 @@ main {
     align-items: center;
     flex: 1;
     
+    
 }
 
 
@@ -99,6 +101,7 @@ main {
     color:#373737;
     text-align: center;
     font-family: 'Roboto Slab', serif;
+    font-size: 2em;
     
 }
 
@@ -112,6 +115,7 @@ main {
     color: white;
     text-align: center;
     font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
 }
 
 .titulo_letras img {
@@ -119,6 +123,26 @@ main {
     object-fit: none;
     object-position: 15% 20% ;
     width: 100%;
+
+}
+
+#contenedor_index_contenido {
+    margin: 1em;
+    padding: 2em;
+    
+}
+
+.parrafo_general {
+    
+    text-align: center;
+}
+
+.parrafo_general  p {
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    width: 80%;
 
 }
 
