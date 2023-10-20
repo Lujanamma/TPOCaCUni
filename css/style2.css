@@ -261,6 +261,18 @@ footer {
     
 }
 
+footer .footer_institucional {
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+footer .contacto_footer a {
+    color: #dce0e3;
+    text-decoration: none;
+    font-size: 1.5em;
+
+}
+
 /* responsive */
 
 @media (max-width: 991px) {
@@ -334,7 +346,6 @@ footer {
         
     }
 
-    
 
     .icon {
         display: block;
@@ -347,10 +358,12 @@ footer {
     }
      /*footer*/
 
-    footer {
+     footer .footer_institucional {
         
-
+        padding: 0em;
     }
+
+
 
     /*contenido*/
 
