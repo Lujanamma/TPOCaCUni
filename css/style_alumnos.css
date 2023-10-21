@@ -188,6 +188,7 @@
 .acordeon_mayor {
     display: block;
     width: 100%;
+    margin-bottom: 3em;
 }
 
 .acordeon_mayor > input[type="checkbox"] {
@@ -265,7 +266,7 @@
 
 
 .acordeon > input[type="checkbox"]:checked ~ .contenido_acordeon {
-    height: 18em;
+    height: 16em;
     overflow: visible;
     transition: all 0.3s ease;
     -webkit-transition: color 0.5 ease 1s;
