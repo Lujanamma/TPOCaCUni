@@ -227,6 +227,20 @@ main {
   
 }
 
+.index_noticias {
+    width: 90%;
+    background-color: #4ca9ee;
+
+}
+
+.index_noticias p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    color: #373737;
+    padding: 1em;
+    
+}
+
 #contenedor_noticias div {
 
     margin: auto;
@@ -307,6 +321,11 @@ main {
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
+}
+
+.titulo_noticias {
+    color: #228978;
+    font-size: 1.5em;
 }
 
 

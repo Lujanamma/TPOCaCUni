@@ -630,15 +630,6 @@
     -o-transition: all 1s;
 }
 
-.boton_arriba {
-    
-}
-
-.boton_abajo {
-   
-    
-}
-
 
 .eventos article{
     
@@ -646,7 +637,14 @@
     flex: 1;
     padding: 0.5em;
     border: 0.1em solid #9ad1f8;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
     
+}
+
+.titulo_noticias {
+    color: #228978;
+    font-size: 1.5em;
 }
 
 
