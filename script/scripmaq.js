@@ -37,29 +37,22 @@ function CambioTramite(evt, TramiteActivo ){
 
 
 
-function NavbarCelularAbre() {
-  document.getElementById("minavbar").style.width = "100%";
-}
 
-function NavbarCelularCierra() {
-  document.getElementById("minavbar").style.width = "0%";
-}
 
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
+function validarPreinscripcion() {
+  let apellido = document.forms["pre-inscripcion_form"]["apellido"].value;
+  let nombre = document.forms["pre-inscripcion_form"]["nombre"].value;
+  let dni = document.forms["pre-inscripcion_form"]["dni"].value;
+  let cuil = document.forms["pre-inscripcion_form"]["cuil"].value;
+  let email = document.forms["pre-inscripcion_form"]["email"].value;
+  let genero = document.forms["pre-inscripcion_form"]["genero"].value;
+  let alumno_existente = document.forms["pre-inscripcion_form"]["alumno_existente"].value;
+  let id_curso = document.forms["pre-inscripcion_form"]["id_curso"].value;
 
-function openMenu()
-{
-    document.getElementById('container').style.right='0%';
-    document.getElementById('menu').style.opacity='1';
-}
-function closeMenu()
-{
-    document.getElementById('container').style.right='-100%';
-    document.getElementById('menu').style.opacity='0';
+  if (apellido=="" || nombre=="" || dni=="" || cuil=="" || email=="" || genero=="" || alumno_existente=="" || id_curso=="") {
+    alert("Todos los campos son obligatorios")
+  } 
+  
+
 }

@@ -408,6 +408,7 @@
 }
 
 .pestanias button {
+    flex: 1;
     border: none;
     background-color: #5dcd81;
     outline: none;
@@ -446,8 +447,51 @@
     -moz-transition: all 0.8s;
     -ms-transition: all 0.8s;
     -o-transition: all 0.8s;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
 
 }
+
+.contenido_pestania div {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.contenido_pestania div label {
+    flex: 30%;
+    
+}
+.contenido_pestania div input {
+    flex: 70%;
+}
+
+.contenido_pestania label, input, p, select {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    
+}
+
+.contenido_pestania input {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+}
+
+.contenido_pestania div p {
+    display: block;
+}
+
+.contenido_pestania .botones_form {
+    justify-content: space-around;
+}
+
+.contenido_pestania .botones_form input{
+    max-width: 6em;
+}
+
+
+
+
 
 
 /* Calendario Academico */
@@ -798,6 +842,12 @@
 
 
     /* oferta academica */
+
+    /*tramites */
+
+    .contenido_pestania div {
+        flex-direction: column;
+    }
 
 
 
