@@ -56,3 +56,49 @@ function validarPreinscripcion() {
   
 
 }
+
+function validarSolicituTit() {
+  let apellido = document.forms["soltit_form"]["apellido"].value;
+  let nombre = document.forms["soltit_form"]["nombre"].value;
+  let dni = document.forms["soltit_form"]["dni"].value;
+  let matricula = document.forms["soltit_form"]["matricula"].value;
+  let id_curso = document.forms["soltit_form"]["id_curso"].value;
+  let comision = document.forms["soltit_form"]["comision"].value;
+  
+
+  if (apellido=="" || nombre=="" || dni=="" || matricula=="" || id_curso=="" || comision=="" ) {
+    alert("Todos los campos son obligatorios")
+  } 
+  
+
+}
+
+function validarPagoMatricula() {
+  let apellido = document.forms["pago_matricula_form"]["apellido"].value;
+  let nombre = document.forms["pago_matricula_form"]["nombre"].value;
+  let matricula = document.forms["pago_matricula_form"]["matricula"].value;
+  let comprobante = document.forms["pago_matricula_form"]["comprobante"].value;
+  
+  
+
+  if (apellido=="" || nombre=="" || matricula=="" || comprobante=="" ) {
+    alert("Todos los campos son obligatorios")
+  } 
+  
+
+}
+
+function validarSeguimiento() {
+  let apellido = document.forms["seguimiento_form"]["apellido"].value;
+  let nombre = document.forms["seguimiento_form"]["nombre"].value;
+  let cod_tramite = document.forms["seguimiento_form"]["cod_tramite"].value;
+  
+  
+  
+
+  if (apellido=="" || nombre=="" || cod_tramite==""  ) {
+    alert("Todos los campos son obligatorios")
+  } 
+  
+
+}
