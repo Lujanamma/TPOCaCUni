@@ -13,8 +13,6 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-        
-
     
     align-items: center;
     
@@ -36,8 +34,6 @@
     flex-shrink: 0;
     height:100%;
 }
-
-
 
 #contenedor_titulos .titulos {
     
