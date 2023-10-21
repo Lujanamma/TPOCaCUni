@@ -13,8 +13,6 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-        
-
     
     align-items: center;
     
@@ -36,8 +34,6 @@
     flex-shrink: 0;
     height:100%;
 }
-
-
 
 #contenedor_titulos .titulos {
     
@@ -75,6 +71,7 @@
     color:#373737;
     text-align: center;
     font-family: 'Roboto Slab', serif;
+    font-size: 2em;
     
 }
 
@@ -88,6 +85,7 @@
     color: white;
     text-align: center;
     font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
 }
 
 #contenedor_alumnos {
@@ -119,15 +117,22 @@
 /*inscripciones */
 
 #informacion_inscripciones {
-    
- 
+    margin: 1em;
+    padding: 2em; 
 }
 
 .parrafo_general {
     
-    
-    margin: 1em;
-    padding: 2em;
+    text-align: center;
+}
+
+.parrafo_general  p {
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    width: 80%;
+
 }
 
 /* seccion de pasos de inscripcion */
@@ -147,10 +152,16 @@
     display: block;
     background-color: #4ca9ee;
     color: #373737;
-    padding: 3em;
-  
+    padding: 2em;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;  
     text-align: center;
     
+}
+
+#pasos_inscipcion h6 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;  
 }
 
 .paso_x_paso {
@@ -171,6 +182,7 @@
     margin: 0;
     background-color: #9ad1f8;
     color: #373737;
+    font-family: 'Roboto Slab', serif;
 }
 
 .acordeon_mayor {
@@ -178,16 +190,13 @@
     width: 100%;
 }
 
-
-
-
 .acordeon_mayor > input[type="checkbox"] {
     width: 100%;
     position: absolute;
 }
 
 .disparador_mayor label {
-    padding: 2em;
+    padding: 1.5em;
 }
 
 .acordeon_mayor .contenido_acordeon_mayor {
@@ -224,7 +233,7 @@
     flex: 1;
     display: flex;
     
-    border: 0.1em solid #228978;
+    box-shadow: 0 0.2em 0.1em rgba(0, 0,0, 0.2);
 }
 
 .acordeon label {
@@ -239,7 +248,7 @@
 .acordeon .contenido_acordeon {
     background-color: white;
     overflow-y: hidden;
-    max-height: 0;
+    height: 0;
     transition: all 0.3s ease;
     -webkit-transition: color 0.5 ease 1s;
     -moz-transition: color 0.5 ease 1s;
@@ -249,8 +258,14 @@
     transition: color 0.5 ease 1s;
 }
 
+.acordeon .contenido_acordeon p {
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+
 .acordeon > input[type="checkbox"]:checked ~ .contenido_acordeon {
-    max-height: 10em;
+    height: 18em;
     overflow: visible;
     transition: all 0.3s ease;
     -webkit-transition: color 0.5 ease 1s;
@@ -292,12 +307,14 @@
 #oferta_academica {
     margin-top: 2em;
     width: 100%;
+    box-shadow: 0 0.2em 0.1em rgba(0, 0,0, 0.2);
 }
 
 .acordeon_oferta_academica {
     background-color: #228978;
     width: 100%;
     margin-bottom: 2em;
+    box-shadow: 0 0.2em 0.1em rgba(0, 0,0, 0.2);
 }
 
 .acordeon_oferta_academica label {
@@ -306,6 +323,7 @@
     cursor: pointer;
     padding: 1em;
     margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
 
 .acordeon_oferta_academica > input[type="checkbox"] {
@@ -325,6 +343,10 @@
     
 }
 
+.acordeon_oferta_academica .contenido_ofac p {
+    font-family: 'Quicksand', sans-serif;
+}
+
 .acordeon_oferta_academica > input[type="checkbox"]:checked ~ .contenido_ofac {
     height: 10em;
     overflow: visible;
@@ -342,18 +364,42 @@
 #seccion_tramites {
 
     display: block;
-    width: 100%;
+    
     margin: 2em;
     margin-left: auto;
     margin-right: auto;
     height: max-content;
     
     align-items: center;
+    width: 80%;
 
     
 }
 
+.informacion_tramites {
+    margin: 1em;
+    padding: 2em;
+    width: 80%;
+}
+
+.informacion_tramites .parrafo_general {
+    text-align: center;
+    
+
+}
+
+.informacion_tramites .parrafo_general {
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    text-align: justify;
+    width: 80%;
+
+}
+
+
 .pestanias {
+    width: 100%;
     display: flex;
     overflow: hidden;
     background-color: white;
@@ -367,6 +413,8 @@
     outline: none;
     cursor: pointer;
     padding: 1em;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
 }
 
 .pestanias button:hover {
@@ -415,6 +463,12 @@
     height: 100%;
     width: 100%;
     
+}
+
+.informacion_calendario {
+    width: 80%;
+    margin: 1em;
+    padding: 2em;
 }
 
 
@@ -552,15 +606,7 @@
 
 
 
-
-
-
-
-
-
-
-
-/* RESPoNSIVE */
+/* RESPONSIVE */
 
 @media (max-width: 991px) {
 
