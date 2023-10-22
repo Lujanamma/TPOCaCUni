@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sedes - UFN</title>
+    <title>Nuestros alumnos - UFN</title>
     <link rel="icon" type="image/x-icon" href="../images/logo_universidad.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/sedes.css">  
     <link rel="stylesheet" href="../css/style2.css">
     <link rel="stylesheet" href="../css/style_alumnos.css">
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
@@ -56,11 +55,11 @@
                             </ul>
                         </li>
                         <li class="navbar_item links_navbar">
-                            <a href="acercade.html">ACERCA DE</a>
+                            <a href="../acercade/acercade.html">ACERCA DE</a>
                             <ul>
-                                <li><a href="acercade.html">Sobre la Universidad Florence Nightingale</a></li>
-                                <li><a href="autoridades.html">Autoridades</a></li>
-                                <li><a href="sedes.html">Sedes</a></li>
+                                <li><a href="../acercade/acercade.html">Sobre la Universidad Florence Nightingale</a></li>
+                                <li><a href="../acercade/autoridades.html">Autoridades</a></li>
+                                <li><a href="../acercade/sedes.html">Sedes</a></li>
 
                             </ul>
                         </li>
@@ -81,45 +80,110 @@
             <div class="titulos">
                 <div class="bufanda_izq"><img src="../images/lateralcuadrado.png" alt="bufanda_izquierda"></div>
                 <div class="titulo_letras">
-                    <h3>Nuestras sedes</h3>
+                    <h3>Nuestra Oferta Académica</h3>
                 </div>
                 <div class="bufanda_der"><img src="../images/lateralcuadrado.png" alt="bufanda_derecha"></div>
             </div>
         </div>
 
-        <div id="contenedor_sedes">
-            <section class="informacion_sedes">
+        <div id="contenedor_alumnos">
+            <section class="informacion_tramites">
                 <div>
-</p>
-<center><section class="sedes">
+<section id="carreras">
+  <center>  <h2>Carreras de Enfermería</h2>
+    <p>Descubre nuestras opciones de formación en enfermería:</p>
 
-    <p>La Universidad Florence Nightingale cuenta con diversas sedes en todo el mundo para brindar educación de calidad. A continuación, te presentamos algunas de nuestras sedes más destacadas:</p>
-    
-    <div class="sede">
-        <img src="https://turismo.buenosaires.gob.ar/sites/turismo/files/styles/img_que_hacer/public/ciudad_panoramica_guemes_1500x610_0.jpg?itok=uMgyai6v" alt="Sede en Ciudad X" style="max-width: 300px;">
-        <h3>Sede Principal - Ciudad de Buenos Aires</h3>
-        <p>Esta es nuestra sede principal, ubicada en la Ciudad de Buenos Aires. Aquí encontrarás instalaciones de última generación y una amplia variedad de programas académicos.</p>
+    <div class="opciones-carreras">
+        <div class="carrera-enfermeria">
+            <h3>Carrera de Enfermería</h3>
+            <p>Conviértete en enfermero/a profesional con nuestro programa de grado.</p>
+            <button onclick="mostrarInformacion('carrera-enfermeria')">Más información</button>
+            <div class="informacion" id="carrera-enfermeria-info">
+                <p>Duración: 4 años</p>
+                <p>Requisitos de admisión</p>
+                <p>Plan de estudios</p>
+            </div>
+        </div>
+
+        <div class="tecnicaturas">
+            <h3>Tecnicaturas</h3>
+            <p>Explora nuestras opciones de tecnicaturas en enfermería:</p>
+            <button onclick="mostrarInformacion('tecnicaturas')">Más información</button>
+            <div class="informacion" id="tecnicaturas-info">
+                <p>Tecnicatura en Enfermería Pediátrica</p>
+                <p>Tecnicatura en Enfermería Geriátrica</p>
+            </div>
+        </div>
+        
+        <div class="diplomaturas">
+            <h3>Diplomaturas</h3>
+            <p>Descubre nuestras diplomaturas en enfermería:</p>
+            <button onclick="mostrarInformacion('diplomaturas')">Más información</button>
+            <div class="informacion" id="diplomaturas-info">
+                <p>Diplomatura en Enfermería de Cuidados Intensivos</p>
+                <p>Diplomatura en Enfermería Comunitaria</p>
+            </div>
+        </div>
+        </div>
+        
+        <script>
+        function mostrarInformacion(id) {
+            var info = document.getElementById(id + '-info');
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+        </script>
+        
+
+<style>
+    .opciones-carreras {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .carrera-enfermeria, .tecnicaturas, .diplomaturas {
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .carrera-enfermeria img, .tecnicaturas img, .diplomaturas img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .informacion {
+        display: none;
+        margin-top: 10px;
+    }
+
+    button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 5px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+            </section>
+        </div>
     </div>
-    
-    <div class="sede">
-        <img src="https://static.hosteltur.com/app/public/uploads/img/articles/2014/12/01/L_5c1a3eae0668b_sao_paulo.jpg" alt="Sede en Ciudad Y" style="max-width: 300px;">
-        <h3>Sede en el Extranjero - Ciudad Sao Paulo</h3>
-        <p>Nuestra sede en la ciudad de Sao Paulo ofrece programas internacionales y oportunidades de intercambio para estudiantes de todo el mundo.</p>
-    </div>
-
-
-</section>
-
-                        
-                        </section>
-                        
-    
 
     <footer>
         <picture class="logo_footer_institucional">
             <a href="#">
                 <img src="../images/logo_universidad.png" alt="logo_institucional">
-             </a>
+
+            </a>
         </picture>
         <div class="contacto_footer">
             <p class="footer_institucional">Universidad Florence Nightingale</p> 

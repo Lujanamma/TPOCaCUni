@@ -188,6 +188,7 @@
 .acordeon_mayor {
     display: block;
     width: 100%;
+    margin-bottom: 3em;
 }
 
 .acordeon_mayor > input[type="checkbox"] {
@@ -265,7 +266,7 @@
 
 
 .acordeon > input[type="checkbox"]:checked ~ .contenido_acordeon {
-    height: 18em;
+    height: 16em;
     overflow: visible;
     transition: all 0.3s ease;
     -webkit-transition: color 0.5 ease 1s;
@@ -408,6 +409,7 @@
 }
 
 .pestanias button {
+    flex: 1;
     border: none;
     background-color: #5dcd81;
     outline: none;
@@ -446,8 +448,51 @@
     -moz-transition: all 0.8s;
     -ms-transition: all 0.8s;
     -o-transition: all 0.8s;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
 
 }
+
+.contenido_pestania div {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+}
+
+.contenido_pestania div label {
+    flex: 30%;
+    
+}
+.contenido_pestania div input {
+    flex: 70%;
+}
+
+.contenido_pestania label, input, p, select {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    
+}
+
+.contenido_pestania input {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+}
+
+.contenido_pestania div p {
+    display: block;
+}
+
+.contenido_pestania .botones_form {
+    justify-content: space-around;
+}
+
+.contenido_pestania .botones_form input{
+    max-width: 6em;
+}
+
+
+
+
 
 
 /* Calendario Academico */
@@ -585,15 +630,6 @@
     -o-transition: all 1s;
 }
 
-.boton_arriba {
-    
-}
-
-.boton_abajo {
-   
-    
-}
-
 
 .eventos article{
     
@@ -601,7 +637,14 @@
     flex: 1;
     padding: 0.5em;
     border: 0.1em solid #9ad1f8;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
     
+}
+
+.titulo_noticias {
+    color: #228978;
+    font-size: 1.5em;
 }
 
 
@@ -798,6 +841,12 @@
 
 
     /* oferta academica */
+
+    /*tramites */
+
+    .contenido_pestania div {
+        flex-direction: column;
+    }
 
 
 
