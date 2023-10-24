@@ -1,6 +1,6 @@
 # TPOCaCUni
 
-El sitio corresponde a la ficticia Universidad Florence Nightingale. Consiste en una página principal y tres secciones: Alumnos, Carreras y Acerca de. El enlace al aula virtual es nulo ya que excede el proyecto, al igual que la bibliioteca.
+El sitio corresponde a la ficticia Universidad Florence Nightingale. Consiste en una página principal y tres secciones: Alumnos, Carreras y Acerca de. El enlace al aula virtual es nulo ya que excede el proyecto, al igual que la bibliioteca y RRHH.
 
 Páginas Responsive: El header (barra de navegación superior) y footer son responsive en todas las páginas menos en contacto que no cuenta con los mismos. Los contenidos de toda la rama de alumnos son responsive así como las demás que son informativas.
 
